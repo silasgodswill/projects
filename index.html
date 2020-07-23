@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooreadvice</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary p-0">
+        <div class="container">
+            <a href="adminpage.php" class="navbar-brand">ADMIN PAGE @</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-terget="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="index.html" class="nav-link active text-warning">MOOREADVICE LIMITED</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user"></i> WELCOME ADMIN
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="fas fa-user-circle"></i>profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="fas fa-cog"></i>Setting
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2>
+        <section id="action" class="py-4 mb-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
+                            <i class="fa fa-plus"></i>Update
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-success btn-block" data-toggle="modal"
+                            data-target="#addCategoryModal">
+                            </i>Edit
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="trash.php" class="btn btn-danger btn-block" data-toggle="modal"
+                            data-target="#addUserModal">
+                            Delete
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </h2>
+
+    <section class="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 style="text-align: center;color: mediumblue;">CLIENTS INFORMATION @ MOOREADVICE LIMITED
+                            </h4>
+                        </div>
+                        <table class="table table-straped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Sender Name</th>
+                                    <th>Receiver Name</th>
+                                    <th>Sender Number</th>
+                                    <th>Receiver Number</th>
+                                    <th>Content</th>
+                                    <th>Date and Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Post One</td>
+                                    <td>web development</td>
+                                    <td>May 25 2020</td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <form action="" method="">
+                        <div class="card card-body">
+                            <div class="form-group">
+                                <label for="exampleInputName" style="color: mediumblue;">Name*</label>
+                                    <input type="text" required autocomplete='off' name="client Name" id="#"
+                                        class="form-control bg-dark text-white" placeholder="Client Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"style="color: mediumblue;" >Client email*</label>
+                                    <input type="text" required autocomplete='off' name="client Name" id="#"
+                                        class="form-control bg-dark text-white" placeholder="Client email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPhoneNo" style="color: mediumblue;">PhoneNo*</label>
+                                    <input type="text" required autocomplete='off' name="client Name" id="#"
+                                        class="form-control bg-dark text-white" placeholder="Client Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPayment" style="color: mediumblue;">Mode of payment*</label>
+                                    <input type="text" required autocomplete='off' name="client Name" id="#"
+                                        class="form-control bg-dark text-white" placeholder="Mode of payment">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="fontawesome/js/fontawesome.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
